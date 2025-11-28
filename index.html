@@ -30,19 +30,47 @@
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <img src="logo 2.png" alt="Code Ta Logo" class="h-8">
-            <div class="hidden md:flex space-x-6">
-                <a href="#layanan" class="text-gray-700 hover:text-blue-600 transition">Layanan</a>
-                <a href="#keunggulan" class="text-gray-700 hover:text-blue-600 transition">Keunggulan</a>
-                <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition">Portfolio</a>
-                <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition">Harga</a>
-                <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <img src="logo 2.png" alt="Code Ta Logo" class="h-6 sm:h-8 md:h-10">
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6">
+                    <a href="#layanan" class="text-gray-700 hover:text-blue-600 transition">Layanan</a>
+                    <a href="#keunggulan" class="text-gray-700 hover:text-blue-600 transition">Keunggulan</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition">Portfolio</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition">Harga</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition">FAQ</a>
+                </div>
+                
+                <!-- Desktop WhatsApp Button -->
+                <a href="https://wa.me/6285150762029?text=Halo%20saya%20ingin%20membuat%20website" 
+                   class="hidden md:inline-block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
+                    WhatsApp
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
-            <a href="https://wa.me/6285150762029?text=Halo%20saya%20ingin%20membuat%20website" 
-               class="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition">
-                WhatsApp
-            </a>
+            
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#layanan" class="text-gray-700 hover:text-blue-600 transition py-2 border-b border-gray-200">Layanan</a>
+                    <a href="#keunggulan" class="text-gray-700 hover:text-blue-600 transition py-2 border-b border-gray-200">Keunggulan</a>
+                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition py-2 border-b border-gray-200">Portfolio</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition py-2 border-b border-gray-200">Harga</a>
+                    <a href="#faq" class="text-gray-700 hover:text-blue-600 transition py-2 border-b border-gray-200">FAQ</a>
+                    <a href="https://wa.me/6285150762029?text=Halo%20saya%20ingin%20membuat%20website" 
+                       class="bg-green-500 text-white px-6 py-3 rounded-full hover:bg-green-600 transition text-center">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
         </div>
     </nav>
 

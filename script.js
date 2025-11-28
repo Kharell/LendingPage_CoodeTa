@@ -48,6 +48,24 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
+// Mobile Menu Toggle
+const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+    });
+    
+    // Close mobile menu when clicking menu items
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+}
+
 // Portfolio slide-in animation from left to right
 const portfolioObserver = new IntersectionObserver(function(entries) {
     entries.forEach((entry, index) => {
